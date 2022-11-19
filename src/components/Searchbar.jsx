@@ -27,7 +27,7 @@ const Searchbar = () => {
           name="search-field"
           autoComplete="off"
           id="search-field"
-          placeholder="Search"
+          placeholder="Search for countries"
           type="search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}

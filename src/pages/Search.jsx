@@ -11,10 +11,9 @@ const Search = () => {
   const dataSearch = data?.response;
   //console.log(dataSearch);
 
-  //  const songs = dataData?.tracks?.hits?.map((song) => song.track);
   const songs = dataSearch?.map((country) => country);
 
-  if (isFetching) return <Loader title="Loading to charts" />;
+  if (isFetching) return <Loader title="Loading..." />;
 
   if (error) return <Error />;
 
